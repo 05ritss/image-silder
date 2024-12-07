@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <img id="slider-image" src="wed3.jpg" alt="Slider Image">
+            <div class="text-overlay" id="slider-text">Your Text Here</div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <div class="controls">
+        <input type="text" id="text-input" placeholder="Add your text here">
+        <bottom onclick="updateText()">Add Text</bottom>
+        <select id="font-select" onchange="changeFont()">
+            <option value="Arial">Arial</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+    </div>
+    <script src="image.js"></script>
+</body>
+</html>
